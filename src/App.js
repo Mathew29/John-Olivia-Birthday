@@ -52,10 +52,12 @@ class App extends React.Component {
   render(){
     const {pictures, pic} = this.state;
     return (
+      // <Picture pic={pic}>
       <div className="App">
         <Title/>
         <Picture pic={pic} />
       </div>
+      // {/* </Picture> */}
     );
   }
 }

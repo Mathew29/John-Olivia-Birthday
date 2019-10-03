@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Picture.css'
 
 const Picture = ({pic}) => {
 const {index, picture} = pic;

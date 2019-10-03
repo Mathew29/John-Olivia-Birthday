@@ -1,10 +1,18 @@
 .container{
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
+
 .header{
   font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  color: white
 }
 
 .title{
   font-size: 40px;
+  font-family: 'Rock Salt', cursive;
+  color: white;
 }
