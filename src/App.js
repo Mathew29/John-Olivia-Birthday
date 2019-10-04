@@ -16,7 +16,6 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-    console.log(this.state.pictures.length);
     let index = 1;
     
     
@@ -24,13 +23,11 @@ class App extends React.Component {
       if(index === this.state.pictures.length){
         this.restartPicture();
         index = 1;
-        console.log('index should reset to 1');
         
       } else {
         this.nextPicture()
         index++
       }
-      console.log(index);
     }, 5000)
   }
 
@@ -45,19 +42,16 @@ class App extends React.Component {
     this.setState({
       pic: data.pictures[0]
     })
-    console.log('runs restartPicture');
     
   }
 
   render(){
     const {pictures, pic} = this.state;
     return (
-      // <Picture pic={pic}>
       <div className="App">
         <Title/>
         <Picture pic={pic} />
       </div>
-      // {/* </Picture> */}
     );
   }
 }
